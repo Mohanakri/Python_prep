@@ -249,3 +249,59 @@ server.quit()
 Python provides **powerful modules** for **DevOps automation, infrastructure management, CI/CD pipelines, cloud automation, monitoring, and security**.  
 
 Would you like help with a **real-world DevOps automation script** using these modules? 😊
+
+----------------------------------------------------------------------------------
+
+Python has a **large number of modules** that can be categorized as follows:  
+
+1. **Built-in Modules (C-based, No .py File)**  
+   - These are **compiled into Python itself** and provide core functionalities.  
+   - Example: `math`, `sys`, `time`, `os`, `json`, `re`, `itertools`, `datetime`, etc.  
+
+2. **Standard Library Modules (Python-based, Have .py File)**  
+   - These are written in **pure Python** and included with Python by default.  
+   - Example: `random`, `collections`, `csv`, `http`, `unittest`, etc.  
+
+3. **Third-Party Modules (Installed via pip)**  
+   - These are developed by the community and **must be installed manually** (`pip install <module>`).  
+   - Example: `requests`, `numpy`, `pandas`, `flask`, `django`, etc.  
+
+---
+
+### **📌 How to See All Available Modules?**
+You can list all built-in and standard library modules available in your Python installation:  
+```python
+help("modules")
+```
+🔹 This will print **all available modules** in your environment.
+
+---
+
+### **📌 Some Popular Modules in Each Category**
+| **Category**  | **Modules** | **Description** |
+|--------------|------------|----------------|
+| **Built-in Modules** | `math`, `sys`, `time`, `os`, `re`, `json`, `itertools` | Core utilities, system functions |
+| **Data Handling** | `csv`, `json`, `pickle`, `sqlite3` | File I/O and database interactions |
+| **Networking** | `socket`, `http.server`, `urllib`, `requests` | Internet and web communication |
+| **Multithreading & Parallelism** | `threading`, `multiprocessing`, `asyncio` | Parallel processing & async execution |
+| **Testing & Debugging** | `unittest`, `pytest`, `pdb`, `traceback` | Unit testing and debugging tools |
+| **Mathematics & Statistics** | `math`, `random`, `statistics`, `decimal`, `fractions` | Mathematical operations |
+| **Date & Time** | `datetime`, `time`, `calendar` | Time and date manipulation |
+| **Machine Learning & Data Science** | `numpy`, `pandas`, `scipy`, `sklearn`, `tensorflow` | Data analysis and AI |
+| **Web Frameworks** | `flask`, `django`, `fastapi` | Web development |
+
+---
+
+### **📌 Example: Checking the Source Code of a Standard Library Module**
+For a **pure Python** module like `random`, you can check its full code:
+```python
+import inspect
+import random
+
+print(inspect.getsource(random))
+```
+This **won't work** for built-in modules (like `math`) since they are written in C.
+
+---
+
+Would you like details on any specific category or module? 🚀
