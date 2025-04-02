@@ -283,3 +283,87 @@ t.start()
 
 ## **Conclusion**
 Python contains a vast ecosystem of features ranging from basic data types to advanced metaprogramming. Do you want more details on any specific topic? 🚀
+
+-----------------------------------------------------------
+
+
+### **What Are These Functions (`help()`, `dir()`, etc.) Called in Python?**  
+
+All the functions we discussed (`help()`, `dir()`, `type()`, etc.) belong to a category called **"Introspection Functions"** in Python.
+
+---
+
+## **📌 1. What is Introspection in Python?**
+Introspection means **examining an object at runtime** to get its type, attributes, methods, and other properties **without modifying it**.  
+
+🔹 Python provides built-in **introspection functions** to inspect **data types, classes, methods, modules, and variables dynamically.**
+
+---
+
+## **📌 2. Categories of Introspection Functions**  
+
+### **🔹 (A) Type Inspection – To Check What an Object Is**
+| **Function**  | **Purpose** | **Example** |
+|--------------|------------|------------|
+| `type(obj)` | Gets the type of an object | `type(42)` → `<class 'int'>` |
+| `isinstance(obj, class)` | Checks if an object is an instance of a class | `isinstance("hello", str)` → `True` |
+| `issubclass(cls, parent)` | Checks if a class is a subclass of another class | `issubclass(bool, int)` → `True` |
+
+---
+
+### **🔹 (B) Attribute & Method Inspection – To See What an Object Has**
+| **Function** | **Purpose** | **Example** |
+|------------|------------|------------|
+| `dir(obj)` | Lists all attributes and methods | `dir(str)` |
+| `vars(obj)` | Gets the attributes of an object as a dictionary | `vars(my_object)` |
+| `hasattr(obj, "attr")` | Checks if an object has an attribute | `hasattr(p, "name")` |
+| `getattr(obj, "attr")` | Gets the value of an attribute | `getattr(p, "name")` |
+| `setattr(obj, "attr", value)` | Sets an attribute dynamically | `setattr(p, "age", 25)` |
+
+---
+
+### **🔹 (C) Function & Callable Object Inspection**
+| **Function** | **Purpose** | **Example** |
+|------------|------------|------------|
+| `callable(obj)` | Checks if an object can be called like a function | `callable(len)` → `True` |
+| `help(obj)` | Prints documentation for an object | `help(print)` |
+| `inspect.getmembers(obj)` | Lists all attributes and methods | `inspect.getmembers(str)` |
+
+---
+
+### **🔹 (D) Scope & Namespace Inspection**
+| **Function** | **Purpose** | **Example** |
+|------------|------------|------------|
+| `globals()` | Returns a dictionary of all global variables | `globals()` |
+| `locals()` | Returns a dictionary of all local variables | `locals()` |
+| `id(obj)` | Returns the memory address of an object | `id(42)` |
+
+---
+
+### **🔹 (E) Module Inspection**
+| **Function** | **Purpose** | **Example** |
+|------------|------------|------------|
+| `help(module)` | Shows details about a module | `help(math)` |
+| `dir(module)` | Lists available functions & attributes in a module | `dir(math)` |
+| `inspect.getmodule(obj)` | Returns the module an object belongs to | `inspect.getmodule(math.sqrt)` |
+
+---
+
+## **📌 3. What Are These Called in Python?**
+| **Category** | **Name in Python** | **Examples** |
+|-------------|-----------------|------------|
+| **Type Checking** | Type Introspection | `type()`, `isinstance()`, `issubclass()` |
+| **Getting Attributes & Methods** | Attribute Introspection | `dir()`, `vars()`, `getattr()`, `setattr()` |
+| **Function Checking** | Callable Introspection | `callable()`, `help()`, `inspect.getmembers()` |
+| **Scope & Memory** | Namespace Introspection | `globals()`, `locals()`, `id()` |
+| **Modules** | Module Introspection | `help(math)`, `dir(math)`, `inspect.getmodule()` |
+
+---
+
+## **🚀 Conclusion**
+- **All these functions belong to "Introspection Functions"** because they help inspect objects, types, methods, and attributes dynamically.
+- They allow Python to be **highly flexible**, enabling **dynamic execution, debugging, and reflection**.
+
+Would you like a deeper explanation of any specific function? 😊
+
+
