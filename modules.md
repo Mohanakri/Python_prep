@@ -98,3 +98,76 @@ mock – for mocking objects in tests
 
 Would you like a small project idea using most of these common modules to practice?
 
+_---------------------
+Great question! Here's the deal:
+
+Yes, even if a module is built-in, you still need to import it to use its functions, classes, or constants — unless it's part of Python's core built-ins that are loaded by default.
+
+
+---
+
+Modules that require import (even though they’re built-in):
+
+These are part of the Python Standard Library, but not loaded automatically:
+
+import math
+import datetime
+import random
+import os
+import sys
+import re
+import collections
+import functools
+import itertools
+
+You must import them before use:
+
+import math
+print(math.sqrt(25))  # works
+
+# print(sqrt(25))  # ❌ NameError: name 'sqrt' is not defined
+
+
+---
+
+Functions you can use without importing anything:
+
+These come from Python’s core built-ins (auto-loaded):
+
+print()
+
+len()
+
+sum()
+
+range()
+
+max(), min()
+
+int(), float(), str()
+
+list(), dict(), set(), tuple()
+
+abs(), round()
+
+input()
+
+type(), isinstance(), id(), dir()
+
+
+No import is needed for these:
+
+print(len([1, 2, 3]))
+
+
+---
+
+TL;DR
+
+Built-in module? Yes, still need import.
+
+Core built-in functions? No import needed.
+
+
+Want a cheat sheet that separates both with examples?
+
